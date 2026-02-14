@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caoching-website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <a href="gallery.html">Gallery</a>
+    
 </head>
 <body>
     <!-- Notice Bar -->
 <div class="notice-bar">
-     New Batch Starting from 10 Feb | Limited Seats Available
+   <marquee> 📢 New Batch Starting Soon | Free Demo Class Available | Contact Now!</marquee>
 </div>
 
     <!--navbar-->
@@ -31,41 +30,74 @@
     
     <div class="hero-cta">
         <h3>Addmission Open</h3>
-        <a href="#addmission" class="enroll-btn">Apply Now</a>
+        <a href="#addmission" class ="enroll-btn">Apply Now</a>
     </div>
     <!--hero section-->
     <section class="hero">
-        <h1>Best Caoching for your Beight Future </h1>
+        <h1>Best Caoching for your Bright Future </h1>
         <p>We help students to achive success in exam & career</p>
         <p>Experienced Teachers | Regular Tests | Doubt Clearing</p>
-        <button >Join Me</button>
+        <button id="myBtn">Join Me</button>
     </section>
 <section class="highlights">
     <div class="highlight-box">10+ Years Experience</div>
     <div class="highlight-box">500+ Students</div>
     <div class="highlight-box">Best Results</div>
 </section>
-<section class="admission" id="addmision">
-        <h2>AddmissionFrom</h2>
-        <from id="addmisionfrom">
-            <input type="text" id="sname"
-            placeholder="Student Name">
-             <input type="number" id="age"
-            placeholder="Age">
-             <input type="text" id="class"
-            placeholder="Class">
-             <input type="tel" id="mobile"
-            placeholder="Mobile Number">
-            <select id="course">
-                <option value="">Select Course</option>
-                 <option value="">Class 9-10</option>
-                  <option value="">Class 11-12</option>
-                   <option value="">Competitive Exams</option>
-            </select>
-            <button type="submit">Apply Now</button>
+<br>
+<!--ribbon-->
+<div class="ribbon-banner">
+    
+    Scholarship Test Registration Open-Limited seats!
+</div>
 
-        </from>
-        <p id="admissionMsg"></p>
+<!--scholarship-->
+<section class="scholarship-banner">
+    <h2>🏆 Scholarship Test 2026</h2>
+    <p>Win Up To 100% Fee Discount</p>
+    <button onclick="alert('Registration Coming Soon!')">
+        Register Now
+    </button>
+</section><br>
+<!--section rating-->
+<section class="rating-section">
+    <div class="stars">
+        ⭐ ⭐ ⭐ ⭐ ⭐
+    </div>
+    <p>Rated 4.9/5 by 500+ Students</p>
+</section>
+
+<!-- ===== Admission Form Section ===== -->
+<section class="admission">
+    <h2>Admission Form</h2>
+
+    <form class="admission-form">
+        <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="Age" required>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" placeholder="Mobile Number" required>
+            <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="form-group">
+            <select required>
+                <option value="">Select Class</option>
+                <option>Class 9-10</option>
+                <option>Class 11-12</option>
+                <option>Competitive Exams</option>
+            </select>
+            <select required>
+                <option>Maths</option>
+                <option>Science</option>
+                <option>Commerce</option>
+            </select>
+        </div>
+        <textarea placeholder="Message(Optional)"></textarea>
+        <button id="submit">Apply Now</button>
+    </form>
 </section>
 
     <!--course section-->
@@ -96,7 +128,17 @@
         </div>
 
     </section>
+    <h2>Free Study Notes</h2>
     <a href="Notes10th.pdf" download>Download Class 10 Syllabus</a>
+    <!--gallery-->
+    <section class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <img src="young-smiling-student-woman-white-background.jpg" alt="">
+            <img src="young-woman-holding-opened-book-studio.jpg" alt="">
+            
+        </div>
+    </section>
     <!--teachers-->
     <section id="teacher">
         <h2>Our Teachers</h2>
@@ -132,7 +174,7 @@
          <div class="contact-info">
         <p>Thanabhawan,Shamli</p>
         <p>Paukitsolutions<br> Main Road, Thanabhawan</p>
-        <p>+91 9368992781</p>
+        <p>+91 9812458345</p>
         <p>paukitsolutions@gamil.com</p>
         <p><b> Timing</b><br>
         Mon - Sat : 9 AM -7 PM</p>
@@ -152,11 +194,12 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
         
-         <a href="https://wa.me/919368992781" class="whatsapp" target="_blank"> Whatsapp</a>
+         <a href="https://wa.me/919812458345" class="whatsapp" target="_blank"> Whatsapp</a>
     <!--footer-->
     <footer>
         
     <p> &copy 2026 Paukitsolutions | Designed by Paukitsolutions</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
+</html>

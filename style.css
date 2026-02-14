@@ -5,6 +5,54 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* ===== Login Page ===== */
+.login-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #2563eb, #1e3a8a);
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #1e40af;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 10px;
+}
 
 /*navbar*/
 header{
@@ -65,6 +113,61 @@ header nav a{
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+}
+.stars{
+    font-size:28px;
+    color:#facc15;
+    letter-spacing:5px;
+}
+.ribbon-banner{
+    background: #ef4444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.countdown-section{
+    text-align:center;
+    padding:40px;
+    background:#f8fafc;
+}
+
+#countdown{
+    font-size:28px;
+    font-weight:bold;
+    color:#ef4444;
+    margin-top:15px;
+}
+/*sch0larship*/
+.scholarship-banner{
+    background: linear-gradient(to right, #2563eb, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.scholarship-banner h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.scholarship-banner p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.scholarship-banner button{
+    padding: 12px 25px;
+    background: #facc15;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scholarship-banner button:hover{
+    background: #fbbf24;
 }
 /*courses*/
 .courses{
@@ -139,56 +242,93 @@ font-size: 16px;
     width: 100px;
 }
 /*addmision*/
-.addmission {
-    padding: 50px 20px;
+/* ===== Admission Section ===== */
+.admission {
+    padding: 60px 20px;
+    background: #f8fafc;
     text-align: center;
-    background: #357587;
 }
-.addmission from{
-    max-width: 400px;
-    margin: auto;
-}
-.addmission input,
-.admission select,
-.addmission button{
-    width:100% ;
-    padding: 10px;
-    margin: 10px 0;
-}
-.addmission button{
-background: #305fc6;
-color: black;
-text-align: end;
 
-border: none;
-cursor:pointer;
+.admission h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1e293b;
 }
-.highlights{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    background: #f1f5f9;
-}
-.highlight-box{
+
+.admission-form {
+    max-width: 800px;
+    margin: auto;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.admission-form textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.admission-form button {
+    width: 100px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addmission-form button:hover {
+    background: #1d4ed8;
+}
+/* responsive */
+@media(max-width: 768px){
+    .form-group {
+        flex-direction: column;
+    }
 }
 .gallery{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    flex-wrap: wrap;
+   padding: 50px 20px;
+   text-align: center;
+   background: #f1f5f9;
 }
-
-.gallery img{
-    width: 250px;
-    height: auto;
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 15px;
+}
+.gallery-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.gallery-container img:hover {
+    transform: scale(1.05);
 }
 .contact iframe{
     margin-top: 20px;

@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-section">
+    <div class="login-box">
+        <h2>Student Login</h2>
+        <form onsubmit="return loginUser()">
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-msg"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
