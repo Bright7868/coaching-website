@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caoching-website</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+if(localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
 </head>
 <body>
+    <button onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+}
+</script>
     <!-- Notice Bar -->
 <div class="notice-bar">
    <marquee> 📢 New Batch Starting Soon | Free Demo Class Available | Contact Now!</marquee>
