@@ -4,12 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-    /* ADD THIS */
-    position: sticky;
+    /* ADD THIS */*{
+    
     top: 0;
     z-index: 1000;
-}
+    }
 
 header .logo{
     font-size: 24px;
@@ -101,6 +102,7 @@ header nav a{
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
+   
 }
 .card{
     background: #f1f5f9;
@@ -163,7 +165,6 @@ font-size: 16px;
     max-width: 400px;
     width: 100px;
 }
-/*addmision*/
 /* ===== Admission Section ===== */
 .admission {
     padding: 60px 20px;
@@ -259,7 +260,7 @@ font-size: 16px;
 }
 .whatsapp{
     position: fixed;
-    bottom: 20px;
+   
     right: 20px;
     background: #25d366;
     color: white;
@@ -343,19 +344,28 @@ header nav a{
 .courses{
     padding: 50px 20px;
     text-align: center;
+   
 }
 .course-box{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+  align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-top: 30px;
 }
 .card{
+    margin: auto;
+}
+.card{
+   
     background: #f1f5f9;
     padding: 25px;
     width: 250px;
     border-radius: 10px;
 }
+
+
 /*about*/
 .about{
     background: #e0f2fe;
