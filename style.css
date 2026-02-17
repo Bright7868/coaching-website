@@ -384,6 +384,28 @@ footer{
     text-align: center;
     padding: 15px;
 }
+footer {
+    background-color: #0a1a2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
 /*addmision*/
 .addmission {
     padding: 50px 20px;
